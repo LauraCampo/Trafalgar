@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .menu{
+                position: absolute;
+                background-color:#5e8234;
+                color: red;
+                width: 200px;
+                left: 10px;
+                top:70px;
+            }
+            .contenido {
+                position: absolute;
+                left: 230px;
+                top:70px;
+                width: 400px;
+                background-color: red;
+                color: white;
+            }
+            button {
+                background-color:#5e8234;
+                color:red;
+                border:none;
+                font-size: 16px;
+            }
+        </style>
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+               //estils:
+               $('div:first').addClass('menu');
+               $('div:last').addClass('contenido');
+               //events, obtenció del xml
+               //quan es clica España:
+               $('button').click(function(data){
+                   pais = this.value;
+                   $.get('barcostrafalgar.xml',function(data){
+                      $('.contenido').empty();                 
+                      $(data).find(pais).each(function(){
+                         var entrada=$(this);
+                         var nombre="<h3>"+entrada.find('nombre').text()+"</h3>";
+                         var texto="<p>"+entrada.find('texto').text();
+                         $('.contenido').append(nombre+texto);
+                      });
+                   });
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>La batalla de Trafalgar</h1>
+        <div>
+            <ul>
+                <li><button id="esp" value="esp">España</button></li>
+                <li><button id="fra" value="fra">Francia</button></li>
+                <li><button id="ing" value="ing">Inglaterra</button></li>
+            </ul>
+        </div>
+        <div></div>
+    </body>
+</html>

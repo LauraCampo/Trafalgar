@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<barcos>
+    <esp>
+        <id>idesp1</id>
+        <nombre>nombreesp1</nombre>
+        <eslora>esloraesp1</eslora>
+        <manga>mangaesp1</manga>
+        <tonelaje>tonelajeesp1</tonelaje>
+        <cañones>cañonesesp1</cañones>
+        <texto>textoesp1</texto>
+    </esp>
+    <esp>
+        <id>idesp2</id>
+        <nombre>nombreesp2</nombre>
+        <eslora>esloraesp2</eslora>
+        <manga>mangaesp2</manga>
+        <tonelaje>tonelajeesp2</tonelaje>
+        <cañones>cañonesesp2</cañones>
+        <texto>textoesp2</texto>
+    </esp>
+    <ing>
+        <id>iding1</id>
+        <nombre>nombreing1</nombre>
+        <cañones>cañonesing1</cañones>
+        <texto>textoing1</texto>
+    </ing>
+    <ing>
+        <id>iding2</id>
+        <nombre>nombreing2</nombre>
+        <cañones>cañonesing2</cañones>
+        <texto>textoing2</texto>
+    </ing>
+    <fra>
+        <id>idfra1</id>
+        <nombre>nombrefra1</nombre>
+        <cañones>cañonesfra1</cañones>
+        <texto>textofra1</texto>
+    </fra>
+    <fra>
+        <id>idfra2</id>
+        <nombre>nombrefra2</nombre>
+        <cañones>cañonesfra2</cañones>
+        <texto>textofra2</texto>
+    </fra>
+</barcos>

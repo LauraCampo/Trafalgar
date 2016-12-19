@@ -1,0 +1,54 @@
+EXCERCICI 9.7.2. TRAFALGAR P.213
+================================
+- Crear una pàgina html que contingui a un lateral un enllaç
+  per a cada un dels països.
+- Quan es seleccioni un dels països es mostrarà a la caixa central
+  els vaixells que la van formar.
+
+Per realitzar l'excercici s'ha d'emprar jQuery.
+
+ARXIUS NECESSARIS:
+------------------
+Trafalgar
+        |_ index.html
+        |_ barcostrafalgar.xml
+        |_ Notes.txt
+
+TÈCNOLOGIES UTILITZADES:
+------------------------
+- HTML
+- CSS
+- JAVASCRIPT
+- JQUERY
+
+DOM DEL XML:
+------------
+<barcos>
+    <esp>
+        <id></id>
+        <nombre></nombre>
+        <eslora></eslora>
+        <manga></manga>
+        <tonelaje></tonelaje>
+        <cañones></cañones>
+        <texto></texto>
+    </esp>
+    <ing>
+        <id></id>
+        <nombre></nombre>
+        <cañones></cañones>
+        <texto></texto>
+    </ing>
+    <fra>
+        <id></id>
+        <nombre></nombre>
+        <cañones></cañones>
+        <texto></texto>
+    </fra>
+</barcos>
+______________________________________________________________________________
+
+S'ha utilitzat jQuery per donar estil a la caixa del menú i del contingut.
+
+També s'ha utilitzat jQuery per cridar a l'xml i mitjançant un event sobre
+els buttons del menú, cridar a la part del .xml que interessa.
